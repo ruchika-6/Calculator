@@ -1,0 +1,99 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(6, 57, 51);
+    box-sizing: border-box;
+}
+
+p{
+    text-align: center;
+    color: beige;
+    font-size: 2em;
+}
+.result-box
+{
+    text-align: left;
+    color: beige;
+    font-size: 1.5rem;
+    background-color: rgb(10, 81, 72);
+    border: 1.5px solid;
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    padding: 5px;
+    border-color: rgb(7, 70, 62);
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 1;
+}
+
+.box{
+    margin: 5px;
+    padding: 1.5em;
+    background-color: beige;
+    border: 2px solid;
+    border-color: rgb(7, 70, 62);
+    border-radius: 5px;
+    min-width: 25%;
+    height: 25%;
+    font-size: 1.3em;
+    color: #343434;
+    pointer-events: fill;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* .del{
+    background-color: rgb(156, 205, 175);
+    width: 50%;
+    text-align: center;
+} */
+
+.op{
+    background-color: rgb(156, 205, 175);
+}
+
+#eq{
+    background-color: rgb(59, 150, 127);
+    color: #d4d4d4;
+}
+
+.box:hover{
+    background-color: rgba(245, 245, 220, 0.804);;
+}
+
+.op:hover{
+    background-color: rgba(156, 205, 175, 0.737);
+}
+.del:hover{
+    background-color: rgba(156, 205, 175, 0.737);
+}
+
+#eq:hover{
+    background-color: rgba(59, 150, 127, 0.719);
+}
+
+@media only screen and (max-width: 395px){
+    .box{
+        margin: 2px;
+        padding: 20px;
+        font-size: 0.9em;
+    }
+    .result-box{
+        width: 250px;
+        font-size: 1px;
+        height: 40px;
+    }
+}
